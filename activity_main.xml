@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.idtech.annebailey.finalproject.MainActivity"
+    android:background="#000000">
+
+    <!-- C note -->
+    <Button
+        android:layout_width="76dp"
+        android:layout_height="265dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:text=""
+        android:id="@+id/C"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- D note -->
+    <Button
+        android:layout_width="76dp"
+        android:layout_height="265dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:text=""
+        android:id="@+id/D"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/C"
+        android:layout_toEndOf="@+id/C" />
+
+    <!-- E note -->
+    <Button
+        android:layout_width="76dp"
+        android:layout_height="265dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:text=""
+        android:id="@+id/E"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/D"
+        android:layout_toEndOf="@+id/D" />
+
+    <!-- F note -->
+    <Button
+        android:layout_width="76dp"
+        android:layout_height="265dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:text=""
+        android:id="@+id/F"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/E"
+        android:layout_toEndOf="@+id/E" />
+
+    <!-- G note -->
+    <Button
+        android:layout_width="76dp"
+        android:layout_height="265dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:text=""
+        android:id="@+id/G"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/F"
+        android:layout_toEndOf="@+id/F" />
+
+    <!-- A note -->
+    <Button
+        android:layout_width="76dp"
+        android:layout_height="265dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:text=""
+        android:id="@+id/A"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/G"
+        android:layout_toEndOf="@+id/G" />
+
+    <!-- B note -->
+    <Button
+        android:layout_width="76dp"
+        android:layout_height="265dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:text=""
+        android:id="@+id/B"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/A"
+        android:layout_toEndOf="@+id/A" />
+
+    <!-- C# note -->
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="150dp"
+        android:text=""
+        android:id="@+id/Csharp"
+        android:background="#000000"
+        android:layout_alignTop="@+id/C"
+        android:layout_marginLeft = "43dp" />
+
+    <!-- D# note -->
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="150dp"
+        android:text=""
+        android:id="@+id/Dsharp"
+        android:background="#000000"
+        android:layout_alignTop="@+id/C"
+        android:layout_marginLeft = "137dp" />
+
+    <!-- F# note -->
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="150dp"
+        android:text=""
+        android:id="@+id/Fsharp"
+        android:background="#000000"
+        android:layout_alignTop="@+id/C"
+        android:layout_marginLeft = "283dp" />
+
+    <!-- G# note -->
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="150dp"
+        android:text=""
+        android:id="@+id/Gsharp"
+        android:background="#000000"
+        android:layout_alignTop="@+id/C"
+        android:layout_marginLeft = "370dp" />
+
+    <!-- A# note -->
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="150dp"
+        android:text=""
+        android:id="@+id/Asharp"
+        android:background="#000000"
+        android:layout_alignTop="@+id/C"
+        android:layout_marginLeft = "456dp" />
+
+    <!-- Text for a starting note (initially set to C) -->
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="C"
+        android:id="@+id/note"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_alignParentLeft="true" />
+
+    <!-- Text for a type of chord (initially set to major) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Major 7"
+        android:id="@+id/chord"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/note"
+        android:layout_toEndOf="@+id/note" />
+
+    <!-- Text to display the score -->
+    <TextView
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:text="Score: 0"
+        android:id="@+id/score"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_alignParentRight="true" />
+
+    <!-- Button displayed when the chord is correct -->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Correct! Click for next chord."
+        android:id="@+id/coverCorrect"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="40dp"
+        android:background="#000000"
+        android:textColor="#1fed41" />
+
+    <!-- Button displayed when the chord is incorrect -->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Wrong! Click to try again."
+        android:id="@+id/coverWrong"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#000000"
+        android:textColor="#eb1b1b"
+        android:textSize="40dp" />
+
+    <!-- Button displayed when the users loses -->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="You Lost! Your score was _. Click to start new game."
+        android:id="@+id/coverLose"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#000000"
+        android:textColor="#eb1b1b"
+        android:textSize="40dp" />
+
+    <!-- Button displayed when the time is up and the game is over -->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Game Over! Your score was _. Click to start new game."
+        android:id="@+id/coverNewGame"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:textSize="40dp" />
+
+    <!-- Home screen display -->
+    <Button
+        android:layout_width="560dp"
+        android:layout_height="275dp"
+        android:text="Play That Chord! Choose a type of chord for the next game, or choose 'play' to just play on a plain keyboard."
+        android:id="@+id/introButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:textSize="25dp" />
+
+    <!-- Button to select a game with just major chords -->
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Major"
+        android:id="@+id/majorButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#000000"
+        android:textSize="20dp" />
+
+    <!-- Button to select a game with just minor chords -->
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Minor"
+        android:id="@+id/minorButton"
+        android:textSize="20dp"
+        android:background="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/majorButton"/>
+
+    <!-- Button to select a game with just dominant chords -->
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Dominant"
+        android:id="@+id/dominantButton"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/minorButton"
+        android:background="#000000"
+        android:textSize="20dp" />
+
+    <!-- Button to select a game with just diminished chords -->
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:text="Diminished"
+        android:id="@+id/diminishedButton"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/dominantButton"
+        android:textSize="20dp"
+        android:background="#000000" />
+
+    <!-- Button to select a game with all 4 types of chords -->
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:text="All Chords"
+        android:id="@+id/allButton"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/diminishedButton"
+        android:textSize="20dp"
+        android:background="#000000" />
+
+    <!-- Button to just play the piano, without playing the game -->
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Play"
+        android:id="@+id/playButton"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/allButton"
+        android:textSize="20dp"
+        android:background="#000000" />
+
+</RelativeLayout>
